@@ -10,13 +10,14 @@ function ColorList() {
   ];
 
   const colorElements = colors.map((color) => {
-    return <ColorItem key={color} color={color} />;
+    return <li key={color} style={{ color: color }}>
+    {color}
+  </li>;
   });
   return (
     <div>
       <h1>Top 5 CSS Colors</h1>
       <ol>
-        {/* display the array of <li> elements here! */}
         {colorElements}
       </ol>
     </div>
